@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+  
+    <title>Predicting</title>
+</head>
+<style>
+#pappu
+    {
+        color: brown;
+        text-align: center;
+        margin-top: 200px;
+    }
+.body
+{
+  
+    
+     background-image: url('https://t3.ftcdn.net/jpg/04/05/85/12/240_F_405851264_PABJ79aMWeaK1CJ130JJLP8KiYgnSQnh.jpg');
+     background-size: cover;
+     background-repeat: no-repeat;
+
+}
+.form
+{
+    text-align: center;
+    margin-top: 100px;
+    border: 200px;
+    border-color:chartreuse;
+}
+#cool
+{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-clip: border-box;
+}
+#note
+{
+    text-align: center;
+    margin-right: 80px;
+}
+#button
+{
+    margin-top: 30px;
+    width: 150px;
+    height: 50;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#button:hover
+{
+    background-color: lawngreen;
+}
+#variance
+{
+    width: 200px;
+    height: 50;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#skewness
+{
+    width: 200px;
+    height: 50;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#curtosis
+{
+    width: 200px;
+    height: 50;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#entropy
+{
+    width: 200px;
+    height: 50;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 15px;
+}
+#cool
+{
+    background-color: red;
+}
+</style>
+<body class='body'>
+    <h1 id='cool'>~Welcome To Bank Note Authenticator~ </h1>
+    <form class='form' action='result' method="POST">{% csrf_token %}
+        <h2>Variance</h2>
+        <input id='variance' type='text' name='variance' placeholder='Range(-7 to 6)'>
+        <h2>Skewness</h2>
+        <input id='skewness' type='text' name='skewness' placeholder='Range(-13 to 12)'>
+        <h2>Curtosis</h2>
+        <input id='curtosis' type='text' name='curtosis' placeholder='Range(-5 to 17)'>
+        <h2>Entropy</h2>
+        <input id='entropy' type='text' name='entropy' placeholder='Range(-8 to 3)'><br>
+        <button id='button' type='submit' class='btn-btn-primary btn-block btn-large'>Predict</button>
+
+        
+        
+
+    </form>
+    
+</body>
+</html>
